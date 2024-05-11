@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inicosesionActivity"
+    android:background="#1C1B23"
+    android:fillViewport="true"
+
+  >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignTop="@+id/obscuro"
+            android:layout_alignStart="@+id/obscuro"
+            android:layout_alignBottom="@+id/obscuro"
+            android:layout_alignEnd="@+id/obscuro"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/inis"
+            >
+
+
+        </ImageView>
+    <LinearLayout
+        android:id="@+id/obscuro"
+        android:layout_width="900px"
+        android:layout_height="1100px"
+        android:layout_centerInParent="true"
+        android:background="#d8000000"
+        android:orientation="vertical"
+
+        >
+
+    </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="350dp"
+      android:layout_height="400dp"
+      android:layout_alignStart="@+id/obscuro"
+      android:layout_alignTop="@+id/obscuro"
+      android:layout_alignBottom="@+id/obscuro"
+      android:layout_marginTop="45dp"
+      android:layout_alignEnd="@+id/obscuro"
+      android:layout_marginStart="40dp"
+      android:layout_marginBottom="50dp"
+      android:layout_marginEnd="40dp"
+
+      android:orientation="vertical">
+     <TextView
+         android:id="@+id/viewmi"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/sign_in"
+         android:textColor="#3684FA"
+         android:textSize="20dp"
+         android:textStyle="bold">
+     </TextView>
+      <View
+          android:layout_marginTop="5dp"
+          android:backgroundTint="#3684FA"
+          android:layout_marginStart="20dp"
+          android:layout_marginEnd="10dp"
+          android:layout_width="40dp"
+          android:layout_height="1dp"
+          android:background="@android:color/black"/>
+      <EditText
+          android:maxLength="35"
+          android:maxLines="1"
+          android:textColor="#3684FA"
+          android:singleLine="true"
+          android:id="@+id/usermi"
+          android:layout_width="270dp"
+          android:layout_height="wrap_content"
+          android:textColorHint="#3684FA"
+          android:hint="@string/Username"
+          android:layout_marginTop="45dp"
+          android:textSize="50px"
+          android:textStyle="bold"
+          android:background="@null"
+          android:autofillHints="numer">
+      </EditText>
+
+      <View
+
+          android:layout_marginTop="6dp"
+          android:backgroundTint="#3684FA"
+         android:layout_marginStart="3dp"
+          android:layout_width="match_parent"
+          android:layout_height="3dp"
+          android:background="@android:color/black"/>
+      <EditText
+          android:textColor="#3684FA"
+          android:maxLength="8"
+          android:layout_width="270dp"
+          android:layout_height="wrap_content"
+          android:hint="@string/phone_number"
+          android:layout_marginTop="25dp"
+          android:textStyle="bold"
+          android:textColorHint="#3684FA"
+          android:textSize="50px"
+          android:background="@null"
+          android:autofillHints="number"
+          android:inputType="number">
+
+      </EditText>
+
+      <View
+          android:id="@+id/velow"
+          android:layout_marginTop="6dp"
+          android:backgroundTint="#3684FA"
+          android:layout_marginStart="3dp"
+          android:layout_width="match_parent"
+          android:layout_height="3dp"
+          android:background="@android:color/black"/>
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/start"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"
+          android:text="@string/start"
+          android:background="@drawable/botton1"
+          android:backgroundTint="#3684FA"
+          android:layout_gravity="center"
+          android:layout_marginTop="45dp"
+
+          >
+
+      </androidx.appcompat.widget.AppCompatButton>
+  </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/account_svgrepo_com"
+            android:backgroundTint="#3684FA"
+            android:layout_alignEnd="@+id/obscuro"
+            android:layout_alignTop="@+id/obscuro"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="37dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#3684FA"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+        </View>
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="#3684FA"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            >
+
+        </View>
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="#3684FA"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            >
+
+        </View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#3684FA"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true">
+
+        </View>
+    </RelativeLayout>
+
+
+
+</ScrollView>
